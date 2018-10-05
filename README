@@ -3,9 +3,8 @@
 ## Setup
 
 ```
+bundle install
 sudo apt install youtube-dl ffmpeg -y
-gem install spotify-client
-gem install task_progress_bar
 ```
 
 ## Generate Spotify Token
