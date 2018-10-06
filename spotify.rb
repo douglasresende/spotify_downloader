@@ -19,4 +19,10 @@ config = {
 }
 
 client = SpotifyDownloader.new(config)
-client.download!('PLAYLIST-ID')
+
+if v1 = ARGV[0]
+  client.download!(ARGV[0])
+else
+  p "Run this program as follows:"
+  p "ruby spotify.rb SOTIFY-PLAYLIST-ID"
+end
