@@ -16,4 +16,10 @@ require_relative 'src/spotify_downloader'
 config = YAML::load_file(File.join(File.dirname(File.expand_path(__FILE__)), 'config.yml'))
 
 client = SpotifyDownloader.new(config)
-client.download!('PLAYLIST-ID')
+
+if v1 = ARGV[0]
+  client.download!(ARGV[0])
+else
+  p "Run this program as follows:"
+  p "ruby spotify.rb SOTIFY-PLAYLIST-ID"
+end
