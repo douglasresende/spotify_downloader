@@ -5,10 +5,10 @@ require_relative 'spotify/client'
 class SpotifyDownloader
 
   def initialize(options = {})
-    @google_token  = options.fetch(:google_token)
-    @spotify_token = options.fetch(:spotify_token)
-    @download_path = options.fetch(:download_path)
-    @debug         = options.fetch(:debug) { false }
+    @google_token  = options.fetch("google_token")
+    @spotify_token = options.fetch("spotify_token")
+    @download_path = options.fetch("download_path")
+    @debug         = options.fetch("debug") { false }
   end
 
   def download!(playlist_id)
