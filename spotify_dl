@@ -1,8 +1,7 @@
+#!/usr/bin/env ruby
+
 # frozen_string_literal: true
 
-# sudo apt install youtube-dl ffmpeg -y
-# gem install spotify-client
-# gem install task_progress_bar
 # SPOTIFY_API - TOKEN - https://developer.spotify.com/console/get-playlist-tracks/?playlist_id=37i9dQZEVXbMXbN3EUUhlg
 # GOOGLE_API  - TOKEN - https://console.developers.google.com/apis/library/youtube.googleapis.com
 

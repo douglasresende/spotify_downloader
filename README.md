@@ -3,8 +3,7 @@
 ## Setup
 
 ```
-bundle install
-sudo apt install youtube-dl ffmpeg -y
+sh .setup.sh
 ```
 
 ## Generate Spotify Token
